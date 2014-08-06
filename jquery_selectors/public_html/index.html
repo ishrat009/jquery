@@ -36,10 +36,22 @@
     $(document).ready(function()
                 {
                     //jQuery function as getter
-                    console.log($('#labelid').attr('for','SETNAME').attr('for'));
-                    
+                    //console.log($('#labelid').attr('for'));
                     //jQuery function as setter
-                    console.log($('#labelid').attr('for','setname'));
+                    //console.log($('#labelid').attr('for','setname'));
+                   
+                    //jQuery function as first setter then getter
+                    //console.log($('#labelid').attr('for','SETNAME').attr('for'));
+                    
+                     //jQuery function as first setter then selector
+                    console.log($('#labelid')
+                                    .attr('for','SETNAME')
+                                    .attr('for')
+                                    .css('background-color','red')
+                                    .css('display','block')
+                                    .css('width','300px')
+                                );
+                        
                 }
                 );
     
