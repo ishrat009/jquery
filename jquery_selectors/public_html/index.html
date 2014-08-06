@@ -46,9 +46,8 @@
                      //jQuery function as first setter then selector
                     console.log($('#labelid')
                                     .attr('for','SETNAME')
-                                    .attr('for')
                                     .css('background-color','red')
-                                    .css('display','block')
+                                    .css('display','block') //without block level element width property will not work
                                     .css('width','300px')
                                 );
                         
