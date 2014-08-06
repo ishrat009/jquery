@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+ @author Ishrat
+-->
+<html>
+    <head>
+        <title>Working with jQuery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+           p {
+            margin: 20px 0 0;
+            }
+            b {
+            color: blue;
+            }
+        </style>
+    </head>
+    <body>
+      <script src="jquery.js" type="text/javascript"> </script>    
+        <input id="check1" type="checkbox" checked="checked">
+        <label for="check1" id="labelid">Check me</label>
+        <p></p>
+        
+        <script>
+            $( "input" )
+            .change(function() {
+            var $input = $( this );
+            $( "p" ).html( ".attr( 'checked' ): " + $input.attr( "checked" ) + "" +
+            ".prop( 'checked' ): " + $input.prop( "checked" ) + "" +
+            ".is( ':checked' ): " + $input.is( ":checked" ) + "" );
+            })
+            .change();
+    
+    $(document).ready(function()
+                {
+                    //jQuery function as getter
+                    console.log($('#labelid').attr('for'));
+                    
+                    //jQuery function as setter
+                    console.log($('#labelid').attr('for','setname'));
+                }
+                );
+    
+    
+        </script>
+    </body>
+</html>
