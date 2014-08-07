@@ -1,5 +1,7 @@
 (function($) {
 
+
+//keyword "fn" is a namespace provided for plugins within the jQuery library
     $.fn.helloWorld = function()
     {
 
